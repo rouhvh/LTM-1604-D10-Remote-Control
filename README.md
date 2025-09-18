@@ -139,8 +139,6 @@
 - **Máy A (Server/Host):** bị điều khiển.  
 - **Máy B (Client):** điều khiển từ xa.  
 
----
-
 ### Bước 1: Chạy Server trên Máy A
 
 1. Mở dự án trong Eclipse.  
@@ -172,7 +170,7 @@
 
 ---
 
-✅ Bây giờ bạn đã có thể **điều khiển máy tính từ xa** qua mạng LAN/Internet.
+#### ✅ Bây giờ bạn đã có thể **điều khiển máy tính từ xa** qua mạng LAN/Internet.
 ---
 
 # 📞 5. Liên hệ
