@@ -105,14 +105,14 @@
 # 🚀 3. Hình ảnh các chức năng
 <div align="center">
     <p align="center">
-        <img src="docs/fj.jpg" alt="" width="170"/>
+        <img src="docs/fj.jpg" alt="" width="250"/>
     </p>
     <p>Hình 1: Lấy IP từ máy Server</p>
 </div> 
 
 <div align="center">
     <p align="center">
-        <img src="docs/ik.png" alt="" width="170"/>
+        <img src="docs/ik.png" alt="" width="250"/>
     </p>
     <p>Hình 2: Client đã kết nối và điều khiển Server từ xa</p>
 </div> 
