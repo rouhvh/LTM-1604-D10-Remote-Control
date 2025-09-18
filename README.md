@@ -112,7 +112,7 @@
 
 <div align="center">
     <p align="center">
-        <img src="docs/ik.jpg" alt="" width="170"/>
+        <img src="docs/ik.png" alt="" width="170"/>
     </p>
     <p>Hình 2: Client đã kết nối và điều khiển Server từ xa</p>
 </div> 
