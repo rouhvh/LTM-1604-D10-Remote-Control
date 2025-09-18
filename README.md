@@ -168,8 +168,6 @@
 - Cửa sổ trên Máy B sẽ hiển thị **màn hình của Máy A**.  
 - Bạn có thể sử dụng **chuột và bàn phím** trên Máy B để điều khiển Máy A từ xa, giống như ngồi trực tiếp trước máy.  
 
----
-
 #### ✅ Bây giờ bạn đã có thể **điều khiển máy tính từ xa** qua mạng LAN/Internet.
 ---
 
