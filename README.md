@@ -95,7 +95,7 @@
 
 ---
 # 📝 4. Hướng dẫn cài đặt và sử dụng
-## 📋 Môi Trường Yêu Cầu
+## 📋 4.1 Môi Trường Yêu Cầu
 
 - **Java Development Kit (JDK):** Phiên bản 8 trở lên.  
 - **Môi trường lập trình (IDE):** Eclipse IDE for Java Developers (hoặc bất kỳ IDE nào hỗ trợ Java).  
@@ -103,7 +103,7 @@
 
 ---
 
-## ⚙️ Các Bước Cài Đặt
+## ⚙️ 4.2 Các Bước Cài Đặt
 
 ### Bước 1: Tạo dự án trong Eclipse
 1. Mở Eclipse → **File → New → Java Project**.  
@@ -133,7 +133,7 @@
 
 ---
 
-## ▶️ Hướng Dẫn Sử Dụng
+## ▶️ 4.3 Hướng Dẫn Sử Dụng
 
 Ứng dụng chạy trên **2 máy tính**:  
 - **Máy A (Server/Host):** bị điều khiển.  
