@@ -107,8 +107,9 @@
     <p align="center">
         <img src="docs/fj.jpg" alt="" width="170"/>
     </p>
+    <p>Hình 1: Lấy IP từ máy Server</p>
 </div> 
-- Hình 1: Lấy IP từ máy Server
+
 
 ---
 
