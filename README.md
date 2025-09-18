@@ -59,19 +59,33 @@
 
 ---
 
-### 1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
+### 2.1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
 - **Vai trò**:  
   Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
 - **Ứng dụng trong hệ thống**:  
   - Client gọi các hàm như `mouseMove()`, `keyPress()` để gửi lệnh điều khiển.  
   - Server dùng callback gọi `receiveScreen()` trên Client để đẩy dữ liệu hình ảnh về.  
 
----
-### 2.1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
+### 2.2. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
 - **Vai trò**:  
   Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
 - **Ứng dụng trong hệ thống**:  
   - Client gọi các hàm như `mouảnh: Java Image I/O và AWT Image 🎨
+- **Vai trò**:  
+  - Nén ảnh: Chuyển `BufferedImage` thành mảng `byte[]` (JPEG) để gửi qua mạng.  
+  - Hiển thị ảnh: Chuyển đổi dữ liệu ảnh nhận được để hiển thị mượt mà trên Client.  
+- **Các lớp đã dùng**:  
+  - `javax.imageio.ImageIO`: Đọc/ghi các định dạng ảnh.  
+  - `java.awt.image.BufferedImage`: Biểu diễn ảnh trong bộ nhớ.  
+  - `java.awt.Image`: Lớp cơ sở cho đối tượng đồ họa hình ảnh.  
+### 2.3. Điều Khiển & Chụp Màn Hình: Java AWT 📸🖱️
+- **Vai trò**:  
+  - **Chụp ảnh màn hình**: Ghi lại hình ảnh hiện tại trên màn hình Server.  
+  - **Mô phỏng điều khiển**: Thực hiện lệnh di chuyển chuột, nhấn chuột, gõ phím.  
+- **Lớp chính**:  
+  - `java.awt.Robot`: Tạo sự kiện đầu vào (chuột, bàn phím) và chụp màn hình.  
+
+### 2.4. Xử Lý Hình Ảnh: Java Image I/O và AWT Image 🎨
 - **Vai trò**:  
   - Nén ảnh: Chuyển `BufferedImage` thành mảng `byte[]` (JPEG) để gửi qua mạng.  
   - Hiển thị ảnh: Chuyển đổi dữ liệu ảnh nhận được để hiển thị mượt mà trên Client.  
