@@ -108,7 +108,16 @@
         <img src="docs/fj.jpg" alt="" width="170"/>
     </p>
     <p>Hình 1: Lấy IP từ máy Server</p>
-</div> 
+<
+div> 
+
+<div align="center">
+    <p align="center">
+        <img src="docs/ik.jpg" alt="" width="170"/>
+    </p>
+    <p>Hình 2: Client đã kết nối và điều khiển Server từ xa</p>
+<
+div> 
 
 
 ---
