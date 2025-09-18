@@ -47,8 +47,6 @@
 - **Làm việc từ xa (Remote Work).**  
 - **Quản trị hệ thống & server.**  
 
----
-
 ## 📂 Cấu trúc project (tham khảo)
 
 ---
