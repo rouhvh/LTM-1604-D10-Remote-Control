@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   REMOTE 
+    ỨNG DỤNG ĐIỀU KHIỂN MÁY TÍNH TỪ XA (REMOTE CONTROL) 
 </h2>
 <div align="center">
     <p align="center">
