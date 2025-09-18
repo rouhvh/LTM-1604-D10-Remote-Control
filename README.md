@@ -175,7 +175,7 @@
 ✅ Bây giờ bạn đã có thể **điều khiển máy tính từ xa** qua mạng LAN/Internet.
 ---
 
-## 📞 5. Liên hệ
+# 📞 5. Liên hệ
 - **Họ tên:** Lê Hải Đăng  
 - **Lớp:** CNTT16-04  
 - **Email:** dangngoc1122004@gmail.com  
