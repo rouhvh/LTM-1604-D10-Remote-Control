@@ -105,7 +105,7 @@
 # 🚀 3. Hình ảnh các chức năng
 <div align="center">
     <p align="center">
-        <img src="docs/fj.jpg" alt="" width="450"/>
+        <img src="docs/it.png" alt="" width="450"/>
     </p>
     <p>Hình 1: Lấy IP từ máy Server</p>
 </div> 
