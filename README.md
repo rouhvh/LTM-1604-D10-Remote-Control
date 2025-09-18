@@ -13,8 +13,60 @@
         <img src="docs/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
     </p>
 
-[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https:tài
+[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
+</div>
+
+# 📖 1. Giới thiệu hệ thống
+## Ứng dụng điều khiển máy tính từ xa (Remote Control)
+
+Ứng dụng cho phép người dùng **truy cập, theo dõi và điều khiển máy tính từ xa** thông qua mạng **Internet hoặc LAN**.
+
+## 🖥️ Kiến trúc hệ thống
+- **Máy chủ (Remote Server)**  
+  - Là máy tính bị điều khiển.  
+  - Chia sẻ màn hình theo thời gian thực.  
+  - Tiếp nhận và thực thi các lệnh điều khiển (chuột, bàn phím) từ Client.  
+
+- **Máy khách (Remote Client)**  
+  - Là máy tính điều khiển.  
+  - Hiển thị màn hình từ xa.  
+  - Gửi thao tác chuột, bàn phím đến Server.  
+
+## 🚀 Tính năng chính
+- Xem toàn bộ màn hình máy tính từ xa.  
+- Thao tác chuột và bàn phím như ngồi trực tiếp trước máy.  
+- Giao diện đơn giản, dễ sử dụng.  
+- Có thể mở rộng thêm:
+  - Bảo mật và xác thực người dùng.  
+  - Kết nối qua Internet (WAN).  
+
+## 🛠️ Ứng dụng
+- **Làm việc từ xa (Remote Work).**  
+- **Quản trị hệ thống & server.**  
+
+---
+
+## 📂 Cấu trúc project (tham khảo)
+
+---
+
+# 🛠️ 2. Công nghệ sử dụng
+
+Đề tài chủ yếu dựa trên các công nghệ của **Java Platform, Standard Edition (Java SE)**:
+
+---
+
+### 1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
+- **Vai trò**:  
+  Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
+- **Ứng dụng trong hệ thống**:  
+  - Client gọi các hàm như `mouseMove()`, `keyPress()` để gửi lệnh điều khiển.  
+  - Server dùng callback gọi `receiveScreen()` trên Client để đẩy dữ liệu hình ảnh về.  
+
+---
 ### 2.1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
 - **Vai trò**:  
   Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
