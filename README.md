@@ -76,14 +76,14 @@
   - `javax.imageio.ImageIO`: Đọc/ghi các định dạng ảnh.  
   - `java.awt.image.BufferedImage`: Biểu diễn ảnh trong bộ nhớ.  
   - `java.awt.Image`: Lớp cơ sở cho đối tượng đồ họa hình ảnh.  
-### 2.3. Điều Khiển & Chụp Màn Hình: Java AWT 📸🖱️
+### 2.3. Điều khiển & chụp màn hình: Java AWT 📸🖱️
 - **Vai trò**:  
   - **Chụp ảnh màn hình**: Ghi lại hình ảnh hiện tại trên màn hình Server.  
   - **Mô phỏng điều khiển**: Thực hiện lệnh di chuyển chuột, nhấn chuột, gõ phím.  
 - **Lớp chính**:  
   - `java.awt.Robot`: Tạo sự kiện đầu vào (chuột, bàn phím) và chụp màn hình.  
 
-### 2.4. Xử Lý Hình Ảnh: Java Image I/O và AWT Image 🎨
+### 2.4. Xử lý hình ảnh: Java Image I/O và AWT Image 🎨
 - **Vai trò**:  
   - Nén ảnh: Chuyển `BufferedImage` thành mảng `byte[]` (JPEG) để gửi qua mạng.  
   - Hiển thị ảnh: Chuyển đổi dữ liệu ảnh nhận được để hiển thị mượt mà trên Client.  
@@ -167,24 +167,20 @@
 
 ### Bước 1: Chạy Server trên Máy A
 
-1. Mở dự án trong Eclipse.  
-2. Tìm địa chỉ IP của Máy A:  
-   - Mở **Command Prompt (CMD)**.  
-   - Gõ lệnh:  
+1. Mở dự án trong Eclipse.
+2. Chạy file *client/MainUI.java* **(Run As -> Java Application)**.
+3. Cửa sổ ứng dụng sẽ hiện ra. Lấy thông tin ở ô **"Your ID (Your IP)"** và **"Password"** rồi gửi cho người sẽ điều khiển bạn.
+4. Phần Server RMI và dịch vụ dò tìm đã tự động chạy ở chế độ nền.
 
-     ```bash
-     ipconfig
-     ```  
-   - Ghi lại địa chỉ ở dòng **IPv4 Address** (ví dụ: `192.168.1.10`).  
-3. Trong Eclipse, chạy file **`server/RemoteControlServer.java`**:  
-   - Chuột phải → **Run As → Java Application**.  
-4. Khi thành công, cửa sổ Console sẽ hiển thị:
 
 ### Bước 2: Chạy Client trên Máy B
 
-1. Mở dự án trong Eclipse trên Máy B.  
-2. Chạy file **`client/RemoteControlClient.java`**:  
-- Chuột phải → **Run As → Java Application**.  
+1. Mở dự án trong Eclipse.
+2. Chạy file **client/MainUI.java**.
+3. Cửa sổ ứng dụng sẽ hiện ra.
+    - **Cách 1 (Tự động)**: Chờ vài giây để ứng dụng tự dò tìm. Nếu thành công, IP của máy Server sẽ hiện ra trong danh sách thả xuống.
+    - **Cách 2 (Thủ công)**: Nhập địa chỉ IP của máy Server vào ô **"Partner ID (IP)"**.
+4. Nhấn nút **"Connect to partner"** để bắt đầu phiên điều khiển. 
 
 ### Bước 3: Kết nối Client với Server
 
