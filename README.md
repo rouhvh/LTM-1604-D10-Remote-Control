@@ -53,7 +53,7 @@
 
 # 🛠️ 2. Công nghệ sử dụng
 
-Ứng dụng dựa trên các công nghệ của **Java SE**:
+Ứng dụng dựa trên các công nghệ của **Java SE**
 
 ---
 
