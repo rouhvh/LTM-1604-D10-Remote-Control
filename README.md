@@ -22,7 +22,7 @@
 # 📖 1. Giới thiệu hệ thống
 ## Ứng dụng điều khiển máy tính từ xa (Remote Control)
 
-Ứng dụng cho phép người dùng **truy cập, theo dõi và điều khiển máy tính từ xa** thông qua mạng **Internet hoặc LAN**.
+Ứng dụng cho phép người dùng **truy cập, theo dõi và điều khiển máy tính từ xa** thông qua mạng **LAN**.
 
 ## 🖥️ Kiến trúc hệ thống
 - **Máy chủ (Remote Server)**  
