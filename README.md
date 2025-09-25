@@ -105,9 +105,9 @@
 # 🚀 3. Hình ảnh các chức năng
 <div align="center">
     <p align="center">
-        <img src="docs/it.png" alt="" width="450"/>
+        <img src="docs/l.png" alt="" width="450"/>
     </p>
-    <p>Hình 1: Lấy IP từ máy Server</p>
+    <p>Hình 1: Giao diện dự án</p>
 </div> 
 
 <div align="center">
@@ -115,6 +115,27 @@
         <img src="docs/ik.png" alt="" width="450"/>
     </p>
     <p>Hình 2: Client đã kết nối và điều khiển Server từ xa</p>
+</div> 
+
+<div align="center">
+    <p align="center">
+        <img src="docs/a.png" alt="" width="450"/>
+    </p>
+    <p>Hình 3: Gửi file từ Client đến Server</p>
+</div> 
+
+<div align="center">
+    <p align="center">
+        <img src="docs/s.png" alt="" width="450"/>
+    </p>
+    <p>Hình 4: Chat giữa 2 máy</p>
+</div> 
+
+<div align="center">
+    <p align="center">
+        <img src="docs/d.png" alt="" width="450"/>
+    </p>
+    <p>Hình 5: UI khi Server ngắt kết nối</p>
 </div> 
 
 
