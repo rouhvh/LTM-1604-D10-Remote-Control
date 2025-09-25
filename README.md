@@ -64,16 +64,12 @@
   - Client gọi các hàm: `mouseMove()`, `keyPress()` để gửi lệnh điều khiển.  
   - Server sử dụng callback `receiveScreen()` để gửi ảnh màn hình về Client.  
 
----
-
 ## 2.2. Java AWT 📸🖱️
 - **Vai trò**:  
   - **Chụp ảnh màn hình** trên Server.  
   - **Mô phỏng điều khiển**: thao tác chuột, bàn phím.  
 - **Lớp chính**:  
   - `java.awt.Robot`: tạo sự kiện bàn phím, chuột và chụp màn hình.  
-
----
 
 ## 2.3. Java Image I/O & AWT Image 🎨
 - **Vai trò**:  
@@ -83,8 +79,6 @@
   - `javax.imageio.ImageIO`: đọc/ghi ảnh.  
   - `java.awt.image.BufferedImage`: biểu diễn ảnh trong bộ nhớ.  
   - `java.awt.Image`: lớp cơ sở cho đối tượng hình ảnh.  
-
----
 
 ## 2.4. Java Thread ⚙️
 - **Vai trò**: xử lý song song, tránh treo ứng dụng.  
