@@ -168,7 +168,7 @@
 ### Bước 1: Chạy Server trên Máy A
 
 1. Mở dự án trong Eclipse.
-2. Chạy file *client/MainUI.java* **(Run As -> Java Application)**.
+2. Chạy file `client/MainUI.java` **(Run As -> Java Application)**.
 3. Cửa sổ ứng dụng sẽ hiện ra. Lấy thông tin ở ô **"Your ID (Your IP)"** và **"Password"** rồi gửi cho người sẽ điều khiển bạn.
 4. Phần Server RMI và dịch vụ dò tìm đã tự động chạy ở chế độ nền.
 
@@ -176,7 +176,7 @@
 ### Bước 2: Chạy Client trên Máy B
 
 1. Mở dự án trong Eclipse.
-2. Chạy file **client/MainUI.java**.
+2. Chạy file `client/MainUI.java`.
 3. Cửa sổ ứng dụng sẽ hiện ra.
     - **Cách 1 (Tự động)**: Chờ vài giây để ứng dụng tự dò tìm. Nếu thành công, IP của máy Server sẽ hiện ra trong danh sách thả xuống.
     - **Cách 2 (Thủ công)**: Nhập địa chỉ IP của máy Server vào ô **"Partner ID (IP)"**.
