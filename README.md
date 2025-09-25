@@ -53,52 +53,46 @@
 
 # 🛠️ 2. Công nghệ sử dụng
 
-Đề tài chủ yếu dựa trên các công nghệ của **Java Platform, Standard Edition (Java SE)**:
+Ứng dụng dựa trên các công nghệ của **Java SE**:
 
 ---
 
-### 2.1. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
+## 2.1. Java RMI (Remote Method Invocation) 🖥️➡️🖥️
 - **Vai trò**:  
-  Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
-- **Ứng dụng trong hệ thống**:  
-  - Client gọi các hàm như `mouseMove()`, `keyPress()` để gửi lệnh điều khiển.  
-  - Server dùng callback gọi `receiveScreen()` trên Client để đẩy dữ liệu hình ảnh về.  
+  Cho phép Client gọi phương thức từ xa trên Server như thể chạy cục bộ → đơn giản hóa giao tiếp mạng so với Socket.  
+- **Ứng dụng**:  
+  - Client gọi các hàm: `mouseMove()`, `keyPress()` để gửi lệnh điều khiển.  
+  - Server sử dụng callback `receiveScreen()` để gửi ảnh màn hình về Client.  
 
-### 2.2. Giao tiếp mạng: Java RMI (Remote Method Invocation) 🖥️➡️🖥️
+---
+
+## 2.2. Java AWT 📸🖱️
 - **Vai trò**:  
-  Cho phép Client gọi các phương thức trên đối tượng của Server từ xa như thể đang chạy cục bộ. Đơn giản hóa lập trình mạng so với dùng Socket.  
-- **Ứng dụng trong hệ thống**:  
-  - Client gọi các hàm như `mouảnh: Java Image I/O và AWT Image 🎨
-- **Vai trò**:  
-  - Nén ảnh: Chuyển `BufferedImage` thành mảng `byte[]` (JPEG) để gửi qua mạng.  
-  - Hiển thị ảnh: Chuyển đổi dữ liệu ảnh nhận được để hiển thị mượt mà trên Client.  
-- **Các lớp đã dùng**:  
-  - `javax.imageio.ImageIO`: Đọc/ghi các định dạng ảnh.  
-  - `java.awt.image.BufferedImage`: Biểu diễn ảnh trong bộ nhớ.  
-  - `java.awt.Image`: Lớp cơ sở cho đối tượng đồ họa hình ảnh.  
-### 2.3. Điều khiển & chụp màn hình: Java AWT 📸🖱️
-- **Vai trò**:  
-  - **Chụp ảnh màn hình**: Ghi lại hình ảnh hiện tại trên màn hình Server.  
-  - **Mô phỏng điều khiển**: Thực hiện lệnh di chuyển chuột, nhấn chuột, gõ phím.  
+  - **Chụp ảnh màn hình** trên Server.  
+  - **Mô phỏng điều khiển**: thao tác chuột, bàn phím.  
 - **Lớp chính**:  
-  - `java.awt.Robot`: Tạo sự kiện đầu vào (chuột, bàn phím) và chụp màn hình.  
+  - `java.awt.Robot`: tạo sự kiện bàn phím, chuột và chụp màn hình.  
 
-### 2.4. Xử lý hình ảnh: Java Image I/O và AWT Image 🎨
+---
+
+## 2.3. Java Image I/O & AWT Image 🎨
 - **Vai trò**:  
-  - Nén ảnh: Chuyển `BufferedImage` thành mảng `byte[]` (JPEG) để gửi qua mạng.  
-  - Hiển thị ảnh: Chuyển đổi dữ liệu ảnh nhận được để hiển thị mượt mà trên Client.  
-- **Các lớp đã dùng**:  
-  - `javax.imageio.ImageIO`: Đọc/ghi các định dạng ảnh.  
-  - `java.awt.image.BufferedImage`: Biểu diễn ảnh trong bộ nhớ.  
-  - `java.awt.Image`: Lớp cơ sở cho đối tượng đồ họa hình ảnh.  
+  - **Nén ảnh**: Chuyển `BufferedImage` thành `byte[]` (JPEG) để truyền qua mạng.  
+  - **Giải nén & hiển thị**: chuyển dữ liệu ảnh nhận được để hiển thị trên Client.  
+- **Các lớp chính**:  
+  - `javax.imageio.ImageIO`: đọc/ghi ảnh.  
+  - `java.awt.image.BufferedImage`: biểu diễn ảnh trong bộ nhớ.  
+  - `java.awt.Image`: lớp cơ sở cho đối tượng hình ảnh.  
 
-### 2.5. Lập trình đa luồng: Java Thread ⚙️
-- **Vai trò**: Cho phép thực hiện nhiều tác vụ song song, tránh treo ứng dụng.  
-- **Ứng dụng trong hệ thống**:  
-  - Server chạy một luồng riêng để **chụp & gửi màn hình liên tục** cho Client.  
-  - Vẫn đảm bảo Server có thể nhận lệnh điều khiển đồng thời.  
+---
+
+## 2.4. Java Thread ⚙️
+- **Vai trò**: xử lý song song, tránh treo ứng dụng.  
+- **Ứng dụng**:  
+  - Server chạy một luồng riêng để **chụp & gửi ảnh màn hình liên tục**.  
+  - Đồng thời vẫn nhận lệnh điều khiển từ Client.  
 - **Lớp chính**:  
-  - `java.lang.Thread`: Tạo và quản lý luồng thực thi mới.  
+  - `java.lang.Thread`: tạo và quản lý luồng thực thi.  
 
 ---
 
@@ -142,83 +136,55 @@
 ---
 
 # 📝 4. Hướng dẫn cài đặt và sử dụng
-## 📋 4.1 Môi trường yêu cầu
-
-- **Java Development Kit (JDK):** Phiên bản 8 trở lên.  
-- **Môi trường lập trình (IDE):** Eclipse IDE for Java Developers (hoặc bất kỳ IDE nào hỗ trợ Java).  
-- **Mạng:** Hai máy tính (1 Server, 1 Client) kết nối cùng mạng LAN (ví dụ: cùng Wi-Fi).  
-
----
-
-## ⚙️ 4.2 Các bước cài đặt
-
-### Bước 1: Tạo dự án trong Eclipse
-1. Mở Eclipse → **File → New → Java Project**.  
-2. Đặt tên dự án, ví dụ: `RemoteControlRMI` → **Finish**.  
-
-### Bước 2: Tạo các package cần thiết
-1. Trong **Package Explorer**, chuột phải vào thư mục `src` của dự án.  
-2. Chọn **New → Package**.  
-3. Tạo 3 package:  
-   - `shared`  
-   - `server`  
-   - `client`  
-
-### Bước 3: Tạo file Java và thêm mã nguồn
-- Trong package `shared`:  
-  - Tạo `IClientCallback.java` (Interface).  
-  - Tạo `IRemoteControl.java` (Interface).  
-- Trong package `server`:  
-  - Tạo `RemoteControlServer.java` (Class).  
-- Trong package `client`:  
-  - Tạo `RemoteControlClient.java` (Class).  
-- **Dán mã nguồn** vào các file tương ứng.  
-
-### Bước 4: Xây dựng dự án
-- Eclipse thường tự động biên dịch mã.  
-- Để chắc chắn, vào menu: **Project → Clean...** để dọn dẹp và build lại.  
+## ⚙️ 4.1. Yêu cầu hệ thống
+- **JDK 8+**
+- **Eclipse IDE** (hoặc bất kỳ IDE hỗ trợ Java)
+- **Mạng LAN/Wi-Fi** với 2 máy tính (1 Server + 1 Client)
 
 ---
 
-## ▶️ 4.3 Hướng dẫn sử dụng
+## 🚀 4.2. Cài đặt
+1. Tạo project mới trong Eclipse:  
+   **File → New → Java Project → RemoteControlRMI**
+2. Tạo các package:
+   - `shared`
+   - `server`
+   - `client`
+3. Tạo file:
+   - `shared/IClientCallback.java`
+   - `shared/IRemoteControl.java`
+   - `server/RemoteControlServer.java`
+   - `client/RemoteControlClient.java`
+4. Dán mã nguồn vào các file trên.
+5. Build project (**Project → Clean...** nếu cần).
 
-Ứng dụng chạy trên **2 máy tính**:  
-- **Máy A (Server/Host):** bị điều khiển.  
-- **Máy B (Client):** điều khiển từ xa.  
+---
 
-### Bước 1: Chạy Server trên Máy A
+## ▶️ 4.3. Cách sử dụng
 
-1. Mở dự án trong Eclipse.
-2. Chạy file `client/MainUI.java` **(Run As -> Java Application)**.
-3. Cửa sổ ứng dụng sẽ hiện ra. Lấy thông tin ở ô **"Your ID (Your IP)"** và **"Password"** rồi gửi cho người sẽ điều khiển bạn.
-4. Phần Server RMI và dịch vụ dò tìm đã tự động chạy ở chế độ nền.
+### 🔹 Trên Máy A (Server - Bị điều khiển)
+1. Chạy `client/MainUI.java`.
+2. Ứng dụng hiển thị **Your ID (IP)** và **Password**.
+3. Gửi thông tin này cho người điều khiển.
 
+### 🔹 Trên Máy B (Client - Điều khiển)
+1. Chạy `client/MainUI.java`.
+2. Nhập **Partner ID (IP)** của Máy A.
+3. Nhấn **Connect to partner**.
 
-### Bước 2: Chạy Client trên Máy B
-
-1. Mở dự án trong Eclipse.
-2. Chạy file `client/MainUI.java`.
-3. Cửa sổ ứng dụng sẽ hiện ra.
-  - Nhập địa chỉ IP của máy Server vào ô **"Partner ID (IP)"**.
-4. Nhấn nút **"Connect to partner"** để bắt đầu phiên điều khiển. 
-
-### Bước 3: Kết nối Client với Server
-
-1. Sau khi chạy Client, một hộp thoại sẽ hiện lên yêu cầu nhập địa chỉ IP.  
-2. Nhập địa chỉ IP của Máy A (ví dụ: `192.168.1.10`) và nhấn **OK**.  
-3. Nếu kết nối thành công:  
-- Cửa sổ trên Máy B sẽ hiển thị **màn hình của Máy A**.  
-- Bạn có thể sử dụng **chuột và bàn phím** trên Máy B để điều khiển Máy A từ xa, giống như ngồi trực tiếp trước máy.  
+### 🔹 Kết nối thành công
+- Máy B sẽ hiển thị màn hình Máy A.
+- Có thể sử dụng chuột + bàn phím để điều khiển Máy A từ xa.  
 
 #### ✅ Bây giờ bạn đã có thể **điều khiển máy tính từ xa** qua mạng LAN/Internet.
 ---
 
 # 📞 5. Liên hệ
 - **Họ tên:** Lê Hải Đăng  
-- **Lớp:** CNTT16-04  
+- **Lớp:** CNTT 16-04  
 - **Email:** dangngoc1122004@gmail.com  
 - **Zalo:** 0377968152  
 ---
 
 
-# © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
+## © 2025 AIoTLab, Faculty of Information Technology, DaiNam University. All rights reserved.
